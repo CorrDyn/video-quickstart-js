@@ -43,6 +43,7 @@ app.use('/examples', express.static(examplesPath));
  * Default to the Quick Start application.
  */
 app.get('/', function(request, response) {
+  console.info('GET /', 'to quickstart')
   response.redirect('/quickstart');
 });
 
