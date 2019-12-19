@@ -47,6 +47,10 @@ app.get('/', function(request, response) {
   response.redirect('/quickstart');
 });
 
+app.get('/test-route', (req, res) => {
+  return res.json({ message: 'hello', url: req.url })
+})
+
 /**
  * Generate an Access Token for a chat application user - it generates a random
  * username for the client requesting a token, and takes a device ID as a query
