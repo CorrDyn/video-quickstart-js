@@ -76,9 +76,11 @@ app.get('/token', function(request, response) {
   });
 });
 
+module.exports = app
+
 // Create http server and run it.
-var server = http.createServer(app);
-var port = process.env.PORT || 3000;
-server.listen(port, function() {
-  console.log('Express server running on *:' + port);
-});
+// var server = http.createServer(app);
+// var port = process.env.PORT || 3000;
+// server.listen(port, function() {
+//   console.log('Express server running on *:' + port);
+// });
